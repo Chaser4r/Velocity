@@ -1,0 +1,47 @@
+.tab-section {
+  height: 1155px;
+}
+.tab-section .tab-section__container {
+  width: 994px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tab-section .tab-section__container .tab-section__tabs {
+  height: 862px;
+}
+.tab-section .tab-section__container .tab-section__tabs .tab-section__btns {
+  width: 620px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tab-section .tab-section__container .tab-section__tabs .tab-section__btns .tab-section__btn_active {
+  width: 196px;
+  height: 21px;
+  border-radius: 4px;
+  background: rgb(146, 160, 173);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}

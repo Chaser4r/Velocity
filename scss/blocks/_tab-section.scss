@@ -1,0 +1,120 @@
+.tab-section {
+  .tab-section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    .tab-section__tabs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 40px;
+
+      @media (max-width: 500px) {
+        row-gap: 28px;
+      }
+
+      .tab-section__btns {
+        max-width: 620px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 16px;
+
+        @media (max-width: 640px) {
+          flex-direction: column;
+        }
+
+        .tab-section__btn {
+          width: 196px;
+          height: 21px;
+          margin-block: 17px;
+          border-radius: 4px;
+          background-color: rgb(146, 160, 173);
+          transition: background-color .2s ease-out;
+
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+
+          @media (max-width: 500px) {
+            margin-block: 13px;
+          }
+
+          &:first-of-type {
+            @media (max-width: 640px) {
+              margin-block-start: 0;
+            }
+          }
+
+          &:hover {
+            background-color: rgb(105, 185, 255);
+          }
+
+          &:active {
+            background-color: rgb(68, 114, 153);
+          }
+        }
+
+        .tab-section__btn_active {
+          background: rgb(46, 128, 182);
+        }
+      }
+      
+      .tab-section__img-wrapper {
+        max-width: 100%;
+        margin-bottom: 10px;
+
+        .tab-section__img {
+          width: 100%;
+          aspect-ratio: 1.4992 / 1;
+          margin-block: 0 16px;
+          object-fit: cover;
+          
+          animation-name: fade;
+          animation-duration: 1s;
+
+          @keyframes fade {
+            from {
+              opacity: .3;
+            }
+
+            to {
+              opacity: 1;
+            }
+          }
+        }
+
+        .tab-section__img-caption {
+          text-align: center;
+          
+          .tab-section__img-title {
+            margin-bottom: 14px;
+
+            color: rgb(103, 103, 112);
+            font-size: 31px;
+            line-height: 36px;
+            text-transform: capitalize;
+          }
+
+          .tab-section__img-desc {
+            margin-inline: 15px;
+
+            color: rgb(106, 133, 156);
+            font-size: 13px;
+            line-height: 25px;
+            white-space: pre-line;
+          }
+        }        
+      } 
+    }
+  }
+}
+
+
+

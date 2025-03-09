@@ -1,0 +1,58 @@
+.activity {
+  min-height: 583px;
+
+  .activity__container {
+    min-height: 422px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    .activity__cards-wrapper {
+      min-height: 291px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      @media (max-width: 980px) {
+        flex-direction: column;
+      }
+
+      .activity__card {
+        width: 300px;
+        min-height: 291px;
+        padding: 0 14px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 1px solid rgb(220, 235, 247);
+        border-radius: 5px;
+
+        text-align: center;
+
+        @media (max-width: 340px) {
+          width: 100%;
+        }
+
+        .activity__icon {
+          margin-block: 46px 29px;
+        }
+
+        .activity__title {
+          margin-block-end: 14px;
+          
+          color: rgb(103, 103, 112);
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 7px;
+          text-transform: uppercase;          
+        }
+      }      
+    }    
+  } 
+}

@@ -1,0 +1,124 @@
+html {
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  } 
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.container {
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.dark {
+  background-color: #192024;
+}
+
+.section-paddings {
+  padding-block: 80px;
+
+  @media (max-width: 500px) {
+    padding-block: 56px;
+  }
+}
+
+
+p {
+  color: #6A859C;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.link.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 183px;
+  height: 43px;
+
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  transition: background-color .2s ease-out, color .2s ease-out, border-color .2s ease-out;
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0)
+  }
+
+  &:active {
+    background-color: rgb(220, 220, 220);
+    border-color: rgb(220, 220, 220);
+  }
+}
+
+.main-text {
+  width: 100%;
+  min-height: 72px;
+  margin-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 25px;
+
+  @media (max-width: 500px) {
+    margin-bottom: 42px;
+  }
+
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .main-text__subtitle {
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;    
+  }
+}
+
+.main-text_dark {
+  .main-text__title {
+    color: rgb(103, 103, 112);
+  }
+
+  .main-text__subtitle {
+    color: rgb(142, 142, 156);
+  }
+}
+
+.main-text_light {
+  .main-text__title {
+    color: rgb(255, 255, 255);
+  }
+
+  .main-text__subtitle {
+    color: rgb(232, 232, 232);
+  }
+}
